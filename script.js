@@ -299,3 +299,5 @@ setTimeout(() => {
 musicControl.addEventListener("click", () => {
   musicHint.classList.add("hidden");
 });
+
+ 

@@ -320,4 +320,15 @@ body {
   font-size: 1.2rem;
   animation: fadeIn 2s ease;
 }
-  
+  /* music hint */
+  .music-hint {
+  position: fixed;
+  bottom: 90px; /* slightly above music icon */
+  right: 15px;
+  text-align: center;
+  color: #ff1493;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  z-index: 200;
+  animation: fadeInOut 3s infinite;
+}
