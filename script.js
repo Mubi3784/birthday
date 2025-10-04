@@ -288,3 +288,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Try to play music after animations start
   setTimeout(enableMusic, 1000);
 });
+// music alert
+// Show "Click this" hint for 5 seconds
+const musicHint = document.querySelector(".music-hint");
+setTimeout(() => {
+  musicHint.classList.add("hidden");
+}, 5000);
+
+// When user clicks the music button, hide the hint immediately
+musicControl.addEventListener("click", () => {
+  musicHint.classList.add("hidden");
+});

@@ -370,3 +370,34 @@ h1 {
   transform: scale(1.1);
   box-shadow: 0 8px 25px rgba(255, 105, 180, 0.5);
 }
+/*  music alert sign */
+
+/* Music hint styling */
+.music-hint {
+  position: fixed;
+  bottom: 90px; /* slightly above music icon */
+  right: 15px;
+  text-align: center;
+  color: #ff1493;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  z-index: 200;
+  animation: fadeInOut 3s infinite;
+}
+
+.music-hint .arrow {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+/* Subtle fade animation */
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; transform: translateY(10px); }
+  50% { opacity: 1; transform: translateY(0); }
+}
+
+/* Hide hint when not needed */
+.music-hint.hidden {
+  display: none;
+}
